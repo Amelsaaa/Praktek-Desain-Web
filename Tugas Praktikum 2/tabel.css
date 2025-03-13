@@ -1,0 +1,41 @@
+.judul,
+.subjudul {
+  text-align: center;
+}
+
+h1 {
+  background-color: azure;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px dashed;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid;
+  padding: 3px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-spacing: 5px;
+}
+
+td:nth-child(odd) {
+  background-color: cadetblue;
+}
+
+td:hover:nth-child(even) {
+  background-color: cornflowerblue;
+  transition: 3s;
+  cursor: pointer;
+}
+
+td:hover:nth-child(odd) {
+  background-color: azure;
+  transition: 3s;
+  cursor: pointer;
+}

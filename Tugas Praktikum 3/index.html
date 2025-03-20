@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 200px;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        max-width: 90%;
+      }
+
+      fieldset {
+        border: 2px solid #ff6f61;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #ff6f61;
+        font-size: 1.2em;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      datalist {
+        width: 100%;
+      }
+
+      input[type="reset"],
+      button {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-right: 10px;
+      }
+
+      input[type="reset"]:hover,
+      button:hover {
+        background-color: #333;
+        transition: 3s;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        color: #ff6f61;
+        margin-top: 10px;
+      }
+
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="submit">
+        <h1>Form Pemesanan</h1>
+        <fieldset>
+          <legend>Data Pembeli</legend>
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="nama" placeholder="Nama Anda" />
+          <label for="notelp">No. Telepon</label>
+          <input
+            type="number"
+            name="notelp"
+            id="notelp"
+            placeholder="No. Telepon Anda"
+          />
+          <label for="alamat">Alamat</label>
+          <textarea
+            name="alamat"
+            id="alamat"
+            placeholder="Alamat Anda"
+            rows="5"
+            cols="25"
+          ></textarea>
+          <label for="tanggalkirim">Tanggal Pengiriman</label>
+          <input type="date" name="tanggalkirim" id="tanggalkirim" />
+        </fieldset>
+        <fieldset>
+          <legend>Data Pemesanan</legend>
+          <h3>Pilih Menu</h3>
+          <input list="menu" name="menu" placeholder="Pilih menu" />
+          <datalist id="menu">
+            <option value="Nasi Ayam Daun Jeruk"></option>
+            <option value="Kentang Mustofa"></option>
+            <option value="Pudding"></option>
+            <option value="Samosa"></option>
+          </datalist>
+          <label for="qty">Quantity</label>
+          <input type="number" name="qty" id="qty" value="0" min="0" />
+        </fieldset>
+        <fieldset>
+          <legend>Metode Pembayaran</legend>
+          <select name="bayar" id="bayar">
+            <option value="tunai">Tunai</option>
+            <option value="ewallet">E-Wallet</option>
+            <option value="transferbank">Transfer Bank</option>
+          </select>
+          <h3>Pembayaran</h3>
+          <input
+            type="number"
+            name="pembayaran"
+            id="pembayaran"
+            value="0"
+            min="0"
+          />
+        </fieldset>
+        <div style="text-align: center">
+          <input type="reset" value="Reset" />
+          <button
+            type="button"
+            onclick="alert('Pesananmu telah di proses! Harap tunggu.')"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

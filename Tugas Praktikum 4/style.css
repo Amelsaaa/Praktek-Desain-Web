@@ -1,0 +1,85 @@
+header {
+  text-align: center;
+  img {
+    width: 300px;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+td:nth-child(odd),
+th:nth-child(odd) {
+  background-color: moccasin;
+}
+
+button {
+  transition: 0.5s;
+}
+
+button:hover {
+  color: bisque;
+  background-color: darkred;
+  cursor: pointer;
+}
+
+p {
+  background-color: beige;
+  padding: 20px;
+  font-size: 15px;
+}
+
+table {
+  text-align: center;
+}
+
+.about {
+  padding: 15px;
+  text-align: left;
+}
+
+.navbar {
+  background-color: bisque;
+  margin-left: 5px;
+}
+
+.navbar:hover {
+  background-color: brown;
+  transition: 2s;
+  box-shadow: 10px, 10px, 10px rosybrown;
+  border: 2x solid;
+}
+
+.text {
+  background-color: brown;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+img {
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.text:hover {
+  color: aliceblue;
+  background-color: orange;
+  transform: scale(1.05);
+}
+
+h4 {
+  border: 1px brown solid;
+  text-align: center;
+  height: max-content;
+  background-color: blanchedalmond;
+  padding: 10px;
+}
